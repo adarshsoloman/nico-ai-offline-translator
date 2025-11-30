@@ -1,0 +1,35 @@
+# 1. Python Artifacts (Necessary for all Python projects)
+__pycache__
+*.pyc
+*.pyd
+.venv
+/venv
+.python-version  # If managed by a tool, though often committed for environment setup
+
+# 2. Local Outputs and Large Source Data
+# Exclude the directories shown in your file structure
+/outputs/
+/pdfs/
+*.pdf
+*.zip
+*.tar.gz
+
+# 3. Dependency Management Lock Files
+# The 'uv.lock' and similar lock files should generally be ignored, 
+# unless you specifically want to lock dependency versions across all deployments.
+uv.lock
+
+# 4. IDE and OS Specific Files
+.DS_Store
+.vscode/
+# Add any specific IDE files here
+
+# 5. Build/Deployment Folders (General)
+/node_modules
+/dist
+/build
+
+# 6. Model Files (Crucial for NICO AI to keep repo size down)
+/models/*.onnx
+/models/*.json
+/models/*.bin
